@@ -11,7 +11,7 @@ Resources:
     Type: "AWS::EC2::Subnet"
     Properties:
       AvailabilityZone: us-east-1a
-      CidrBlock: 10.20.0.0/22
+      CidrBlock: 10.21.0.0/22
       VpcId: !Ref VPC
 
   SubnetPublicSharedB:
