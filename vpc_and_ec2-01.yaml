@@ -1,3 +1,34 @@
+<<<<<<< HEAD
+AWSTemplateFormatVersion: '2010-09-09'
+
+Resources:
+  VPC:
+    Type: "AWS::EC2::VPC"
+    Properties:
+      CidrBlock: 10.20.0.0/16
+
+  SubnetPublicSharedA:
+    Type: "AWS::EC2::Subnet"
+    Properties:
+      AvailabilityZone: us-east-1a
+      CidrBlock: 10.21.0.0/22
+      VpcId: !Ref VPC
+
+  SubnetPublicSharedB:
+    Type: "AWS::EC2::Subnet"
+    Properties:
+      AvailabilityZone: us-east-1a
+      CidrBlock: 10.20.4.0/22
+      VpcId: !Ref VPC
+      
+  EC2:
+    Type: AWS::EC2::Instance
+    Properties:
+      AvailabilityZone: us-east-1a
+      SubnetId: !Ref SubnetPublicSharedB
+      ImageId: ami-0080e4c5bc078760e # Linux (1), N.Virginia - Sept 2016
+      InstanceType: t2.micro
+=======
 AWSTemplateFormatVersion: '2010-09-09'
 
 Resources:
@@ -27,3 +58,4 @@ Resources:
       SubnetId: !Ref SubnetPublicSharedB
       ImageId: ami-0080e4c5bc078760e # Linux (1), N.Virginia - Sept 2016
       InstanceType: t2.micro
+>>>>>>> 036ad8dcef63594f2e9a5527563ae9a084fc4cc5
