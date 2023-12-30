@@ -5,3 +5,20 @@ Resources:
     Type: "AWS::EC2::VPC"
     Properties:
       CidrBlock: 10.20.0.0/16
+
+#-------------------------------------------------
+#Adding two Subnets to the VPC
+#-------------------------------------------------
+  SubnetPublicSharedA:
+    Type: "AWS::EC2::Subnet"
+    Properties:
+      AvailabilityZone: us-east-1a
+      CidrBlock: 10.20.0.0/22
+      VpcId: !Ref VPC
+
+  SubnetPublicSharedB:
+    Type: "AWS::EC2::Subnet"
+    Properties:
+      AvailabilityZone: us-east-1a
+      CidrBlock: 10.20.4.0/22
+      VpcId: !Ref VPC
