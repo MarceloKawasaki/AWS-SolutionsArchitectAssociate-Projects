@@ -6,6 +6,7 @@
     - Enter name
     - Key pair type: RSA
     - Private key format: .pem (SSH)
+        - .pem for Linux and Mac and .ppk for Windows
     - Store Private Key in local directory
 4. Creating Security Group
     - Enter name and description
