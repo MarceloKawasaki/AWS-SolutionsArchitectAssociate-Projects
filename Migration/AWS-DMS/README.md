@@ -8,13 +8,13 @@ The guide focuses primarily on Microsoft SQL Server migrations, including SQL Se
 
 ### Migration Flow
 
-1. docs/01-prerequisites.md
-2. docs/02-replication-instance.md
-3. docs/03-networking-and-security.md
-4. docs/04-endpoints.md
-5. docs/05-tasks.md
-6. docs/06-premigration-assessment.md
-7. docs/07-troubleshooting.md
+1. 01-prerequisites.md
+2. 02-replication-instance.md
+3. 03-networking-and-security.md
+4. 04-endpoints.md
+5. 05-tasks.md
+6. 06-premigration-assessment.md
+7. 07-troubleshooting.md
 
 ## Architecture Overview
 
